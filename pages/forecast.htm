@@ -1,0 +1,37 @@
+
+
+<h4>This is current weather for {{cityName}}</h4>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Temperature</h3>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <strong>Current Temperature:</strong> {{ convertToCelsius(weatherResult.main.temp)}}  &#8451
+                </div>
+                <div>
+                    <strong>Minimum Temperature: </strong>{{ convertToCelsius(weatherResult.main.temp_min)}}  &#8451
+                </div>
+                <div>
+                    <strong>Maximum Temperature: </strong>{{ convertToCelsius(weatherResult.main.temp_max)}}  &#8451
+                </div>
+               
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Humidity</h3>
+            </div>
+            <div class="panel-body">
+                Humidity: {{ weatherResult.main.humidity}}  %
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
